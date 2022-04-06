@@ -6,14 +6,9 @@ Pod::Spec.new do |s|
   s.homepage     = 'http://www.enhanceit.com/'
   s.license      = 'copyright enhanceIT'
   s.author       = { 'Christian Quicano' => 'chanthony@enhanceit.com' }
-  s.source = {:git => 'ssh://git@bitbucket.nuskin.net/mobile/volumes-ios.git', :branch => 'master'}
+  s.source = {:git => 'https://github.com/chanthony1/LoginModule', :branch => 'main'}
   s.platform = :ios
-  s.ios.deployment_target = '11.0'
-  s.source_files = 'VolumesModule/**/*.{swift}'
-  s.resources = 'VolumesModule/*.{xcdatamodeld}'
-  s.dependency 'MagicalRecord'
-  s.dependency 'CorePlot', '2.2'
-  s.dependency 'NUSDataManager'
-  s.dependency 'NUSUtilityLibrary'
+  s.ios.deployment_target = '15.0'
+  s.source_files = 'LoginModule/*.{swift}'
   s.requires_arc = true
 end
